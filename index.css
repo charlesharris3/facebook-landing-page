@@ -23,7 +23,6 @@ body {
 Section: Header/Footer CSS
 Purpose: styles the header, footer and content inside of them. 
 */
-
 /* The main container holding the content inside the header/footer. */
 .header-footer-container {
     background-color: #fff;
@@ -73,7 +72,6 @@ Purpose: styles the header, footer and content inside of them.
 Section: Main CTA Container 
 Purpose: holds main CTA and supporting video
 */
-
 /* Main intro container - holds both containers for CTA, video */
 .main-cta-container {
     display: flex;
@@ -91,10 +89,9 @@ Purpose: holds main CTA and supporting video
     background-color:#1877E9;;
     display: flex;
     flex-direction: column;
-    /*margin: 20px;*/
-    /* padding: 10px; */
 }
 
+/* Holds text giving summary of the company */
 .call-to-action-explanation-container {
     width: 100%;
     height: 250px;
@@ -138,7 +135,13 @@ Purpose: holds main CTA and supporting video
     letter-spacing: .5px;
     font-size: 16px;
     font-family: "Poppins","sans-serif";
+    transition: 0.25s;
     width: 50%;
+}
+
+/*Change CTA button background when it's hovered over */
+.cta-button:hover{
+    background-color:#E8E8E8;
 }
 
 /* Intro video */
@@ -161,6 +164,7 @@ Purpose: holds main CTA and supporting video
 Section: App ecosystem container 
 Purpose: holds the heading and icons of facebook app ecosystem 
 */
+/* Container for the app icons */
 .app-news-container {
     display: flex;
     flex-direction: column;
@@ -236,20 +240,19 @@ Purpose: holds the heading and icons of facebook app ecosystem
     font-family: "Poppins","sans-serif";
 }
 
+/* The vector icons for the features */
 .features-icons {
     width: 225px;
     height: 225px;
     margin: 25px;
 }
-
 /* end - Features container CSS */
 
 /*
 Testimonials Container CSS
 Purpose: customize the CSS for the testimonials
 */
-
-
+/* The section that holds the testimonials */
 .testimonials-container{
     width: 100%;
     height: 999px; /* Must be px, not %. Not sure why but it fixes the error of the entire div not showing */
@@ -257,6 +260,7 @@ Purpose: customize the CSS for the testimonials
     flex-direction: column;
 }
 
+/* Each person's testimonial -> picture + quote  */
 .testimonials-user{
     width: 100%;
     height: 333px;
@@ -264,6 +268,7 @@ Purpose: customize the CSS for the testimonials
     flex-direction: row;
 }
 
+/* Reverses the  direction of the middle testimonial */
 .testimonials-user-reverse{
     width: 100%;
     height: 333px;
@@ -273,12 +278,14 @@ Purpose: customize the CSS for the testimonials
     border-bottom: 1px solid #fff;
 }
 
+/* Picture of the person giving the testimonial */
 .testimonials-user-picture{
-    max-width: 33%; 
+    width: 33%; 
     height:auto;
     flex-grow: 1;
 }
 
+/* The container that holds the testimonial text */
 .testimonials-quote-container{
     width: 75%;
     height: 333px;
@@ -289,6 +296,7 @@ Purpose: customize the CSS for the testimonials
     background-color:#1877E9;;
 }
 
+/* The testimonial text */
 .testimonials-user-statement{
     margin-top: 133px;
     padding:0% 5%;
@@ -297,9 +305,10 @@ Purpose: customize the CSS for the testimonials
     color: #fff;
 }
 
+/* Person's name giving the testimonial */
 .testimonials-user-name-occupation{
     margin-top: 10px;
     font-size: 1rem;
     font-family: "Poppins","sans-serif";
 }
-
+/* end - Testimonials Container CSS */
